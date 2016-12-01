@@ -2,7 +2,7 @@ module ps2_keyboard(input reset, input ps2_clk, input ps2_data, output key_downw
 
 `define KEYUP_ESCAPE 8'hF0
 
-typedef enum reg [3:0]
+typedef enum reg [1:0]
 {
 	state_idle,
 	state_reading_data,
